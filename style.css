@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.topnav a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.intro {
+    top: 0;
+    min-height: 55vh;
+    padding-top: 45vh;
+    border-bottom: 3px solid #333;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    padding-bottom: 3rem;
+}
+
+.intro p {
+    font-size: 1.5rem;
+}
+
+.work {
+    padding-top: 60px;
+    margin-top: -60px;
+}
+
+.work .work-header {
+    margin-top: 50px;
+    font-weight: normal;
+}
+
+.project {
+    text-decoration: none;
+    color: teal;
+    display: inline-block;
+    overflow: hidden;
+    border: 2px solid lightblue;
+    height: 220px;
+    width: 280px;
+    margin: 40px 100px;
+}
+
+.project-pic {
+    width: 100%;
+    height: 180px;
+    border-bottom: 2px solid lightblue;
+}
+
+.project-title {
+    font-weight: bold;
+}
+
+.show-all {
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    height: 30px;
+    margin: 20px auto 90px;
+    background: #e0ebe8;
+    color: #008080;
+    font-weight: bold;
+    font-size: 1em;
+    border: 2px solid #90C695;
+    border-radius: 4px;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+.contact {
+    padding-bottom: 160px;
+}
+
+.header {
+    padding: 160px 0 110px;
+}
+
+.header h1 {
+    font-size: 2rem;
+}
+
+.contact-details {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    display: block;
+}
+
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    line-height: 50px;
+}
+
+@media screen and (max-width: 500px) {
+    .topnav a {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .intro {
+        min-height: 35vh;
+        padding-top: 25vh;
+    }
+    .intro h1 {font-size: 2rem;}
+    .intro p {font-size: 1.3rem;}
+}
+
+@media screen and (max-width: 500px) {
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
